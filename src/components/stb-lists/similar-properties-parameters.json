@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_components_similar_properties_parameters",
+  "info": {
+    "name": "Similar Properties Parameters",
+    "icon": "users-cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Price_range": {
+     "configurable": false, 
+     "type": "integer"
+    },
+    "Check_Area": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false
+    },
+    "Check_Postcode": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false
+    },
+    "Status": {
+     "configurable": false, 
+     "type": "enumeration",
+      "enum": [
+        "Sold_subject_to_contract",
+        "Let_Agreed",
+        "For_Sale",
+        "Sale_Agreed",
+        "To_Let",
+        "Sold",
+        "Let"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_modules_global_modules",
+  "info": {
+    "displayName": "global_module",
+    "icon": "paper-plane",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "select_module": {
+      "type": "enumeration",
+      "enum": [
+        "featured_properties",
+        "google_reviews_slider",
+        "offices",
+        "team",
+        "blog",
+        "google_reviews_all",
+        "contact_form",
+        "instant_valuation_form",
+        "home_visit_valuation_form"
+      ],
+      "required": true
+    }
+  }
+}

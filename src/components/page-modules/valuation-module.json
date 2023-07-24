@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_modules_valuation_modules",
+  "info": {
+    "displayName": "valuation_module",
+    "icon": "bookmark"
+  },
+  "options": {},
+  "attributes": {
+    "add_details": {
+      "displayName": "add_new",
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.add-new"
+    }
+  }
+}

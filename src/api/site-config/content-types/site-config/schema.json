@@ -1,0 +1,95 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_configs",
+  "info": {
+    "singularName": "site-config",
+    "pluralName": "site-configs",
+    "displayName": "Site Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Top_Navigation": {
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.sub-menus"
+    },
+    "facebook_link": {
+      "configurable": false,
+      "type": "string"
+    },
+    "twitter_link": {
+      "configurable": false,
+      "type": "string"
+    },
+    "instagram_link": {
+      "configurable": false,
+      "type": "string"
+    },
+    "linkedin_link": {
+      "configurable": false,
+      "type": "string"
+    },
+    "Bottom_Navigation": {
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.sub-menus"
+    },
+    "Footer_Links": {
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.footer-links"
+    },
+    "global_footer_module": {
+      "configurable": false,
+      "type": "component",
+      "repeatable": false,
+      "component": "page-modules.image-and-content"
+    },
+    "news_details_sidebar_content": {
+      "configurable": false,
+      "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "sidebar_cta_title": {
+      "configurable": false,
+      "type": "string"
+    },
+    "sidebar_cta_link": {
+      "configurable": false,
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "rank": {
+      "configurable": false,
+      "type": "integer"
+    },
+    "footer_contact_details": {
+      "type": "customField",
+      "options": {
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "mobile_device_phone": {
+      "type": "string"
+    },
+    "property_details_contact": {
+      "type": "customField",
+      "options": {
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

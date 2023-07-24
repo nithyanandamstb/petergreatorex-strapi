@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_add_popular_links",
+  "info": {
+    "displayName": "add_popular_link",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "custom_link": {
+     "configurable": false, 
+     "type": "string"
+    }
+  }
+}

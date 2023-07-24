@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_components_add_new_accordions",
+  "info": {
+    "displayName": "add_new_accordion",
+    "icon": "arrow-alt-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "content": {
+     "configurable": false, 
+     "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

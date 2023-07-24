@@ -1,0 +1,54 @@
+{
+  "name": "strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.235.0",
+    "@ckeditor/strapi-plugin-ckeditor": "0.0.5",
+    "@retikolo/drag-drop-content-types": "1.2.1",
+    "@starberry/jamstack-ggfxserver": "git+https://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@github.com/starberry/jamstack-ggfxserver.git#strapi-v4",
+    "@starberry/strapi-plugin-stb-audit-log": "4.0.1-v4.e8ef193.0",
+    "@starberry/strapi-plugin-stb-feed-importer": "4.0.1-v4.8d377c0.0",
+    "@starberry/strapi-plugin-stb-forms": "4.0.1-v4.feb2cea.0",
+    "@starberry/strapi-plugin-stb-lists": "4.0.1-v4.98a2a12.0",
+    "@starberry/strapi-plugin-stb-notifications": "4.0.1-v4.6a8aef9.0",
+    "@starberry/strapi-plugin-stb-sitemap-generator": "0.0.1-19e60af.0",
+    "@strapi/plugin-documentation": "4.5.2",
+    "@strapi/plugin-ggfxservercore": "git+https://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@github.com/starberry/strapi-plugin-ggfxservercore.git#strapi-v4",
+    "@strapi/plugin-graphql": "4.5.2",
+    "@strapi/plugin-i18n": "4.5.2",
+    "@strapi/plugin-seo": "1.7.7",
+    "@strapi/plugin-users-permissions": "4.5.2",
+    "@strapi/provider-email-mailgun": "4.5.2",
+    "@strapi/provider-upload-aws-s3": "4.5.2",
+    "@strapi/strapi": "4.6.1",
+    "axios": "^1.3.4",
+    "jstoxml": "^3.2.6",
+    "mysql": "2.18.1",
+    "react-ga": "^3.3.1",
+    "react-google-charts": "^4.0.0",
+    "slugify": "^1.6.5",
+    "strapi-plugin-import-export-entries": "1.18.0",
+    "strapi-plugin-multi-select": "1.1.0",
+    "text-animations-react": "^0.1.8"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "97c96b3f-a229-4d7b-8f49-06496275de08"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

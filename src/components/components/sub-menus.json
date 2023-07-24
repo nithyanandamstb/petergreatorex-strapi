@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_sub_menus",
+  "info": {
+    "displayName": "sub_menus",
+    "icon": "arrow-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    }
+  }
+}

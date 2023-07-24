@@ -1,0 +1,212 @@
+{
+  "kind": "collectionType",
+  "collectionName": "up_users",
+  "info": {
+    "name": "user",
+    "description": "",
+    "singularName": "user",
+    "pluralName": "users",
+    "displayName": "User"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+     "configurable": false, 
+     "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+     "configurable": false, 
+     "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "password": {
+     "configurable": false, 
+     "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "blocked": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "users",
+      "configurable": false
+    },
+    "telephone": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "forename": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "surname": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false,
+      "required": true
+    },
+    "contact_id": {
+     "configurable": false, 
+     "type": "json",
+      "configurable": false
+    },
+    "params": {
+     "configurable": false, 
+     "type": "json",
+      "configurable": false,
+      "private": true
+    },
+    "mobile": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "address1": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "address2": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "country": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "postcode": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "town": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false
+    },
+    "emailNotification": {
+     "configurable": false, 
+     "type": "boolean",
+      "configurable": false,
+      "default": true
+    },
+    "propertyAlerts": {
+     "configurable": false, 
+     "type": "boolean",
+      "configurable": false,
+      "default": true
+    },
+    "unsubscribeToken": {
+     "configurable": false, 
+     "type": "json",
+      "configurable": false
+    },
+    "whatsappNotification": {
+     "configurable": false, 
+     "type": "boolean",
+      "configurable": false,
+      "default": true
+    },
+    "newsAndUpdatesSubscription": {
+     "configurable": false, 
+     "type": "boolean",
+      "configurable": false,
+      "default": false
+    },
+    "welcomeEmail": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false,
+      "configurable": false,
+      "private": true
+    },
+    "lastLogin": {
+     "configurable": false, 
+     "type": "datetime",
+      "configurable": false,
+      "private": true
+    },
+    "isCrm": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false,
+      "configurable": false,
+      "private": true
+    },
+    "persona": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "property_address": {
+     "configurable": false, 
+     "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "approvedToBid": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "social_picture": {
+     "configurable": false, 
+     "type": "text",
+      "configurable": false
+    },
+    "stb_forms": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::stb-forms.stb-form",
+      "mappedBy": "user_id"
+    }
+  }
+}

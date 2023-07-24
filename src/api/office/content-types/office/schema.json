@@ -1,0 +1,114 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offices",
+  "info": {
+    "singularName": "office",
+    "pluralName": "offices",
+    "displayName": "office",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "configurable": false,
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "configurable": false,
+      "type": "uid",
+      "targetField": "title"
+    },
+    "image": {
+      "configurable": false,
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "address": {
+      "configurable": false,
+      "type": "text"
+    },
+    "email": {
+      "configurable": false,
+      "type": "email"
+    },
+    "phone": {
+      "configurable": false,
+      "type": "string"
+    },
+    "publish": {
+      "configurable": false,
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "imagetransforms": {
+      "configurable": false,
+      "type": "json"
+    },
+    "rank": {
+      "configurable": false,
+      "type": "integer"
+    },
+    "property_office_mapping": {
+      "configurable": false,
+      "type": "string"
+    },
+    "about": {
+      "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "opening_hours": {
+      "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "team_intro": {
+      "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "select_team": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team",
+      "inversedBy": "offices"
+    },
+    "sales_email": {
+      "type": "string",
+      "default": "-"
+    },
+    "lettings_email": {
+      "type": "string",
+      "default": "-"
+    },
+    "sales_phone": {
+      "type": "string",
+      "default": "-"
+    },
+    "lettings_phone": {
+      "type": "string",
+      "default": "-"
+    }
+  }
+}

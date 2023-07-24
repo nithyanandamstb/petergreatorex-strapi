@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_components_add_links",
+  "info": {
+    "displayName": "Add_links",
+    "icon": "arrow-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "tile_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "configurable": false,
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

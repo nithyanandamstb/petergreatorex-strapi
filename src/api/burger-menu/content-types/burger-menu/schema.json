@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "burger_menus",
+  "info": {
+    "singularName": "burger-menu",
+    "pluralName": "burger-menus",
+    "displayName": "Burger Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::menu.menu",
+      "inversedBy": "burger_menus"
+    },
+    "publish": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "sort": {
+     "configurable": false, 
+     "type": "biginteger",
+      "required": true,
+      "unique": true,
+      "min": "0"
+    },
+    "add_new": {
+      "displayName": "sub_menus",
+      "type": "component",
+      "configurable": false,
+      "repeatable": true,
+      "component": "components.sub-menus"
+    },
+    "rank": {
+      "configurable": false, 
+      "type": "integer"
+     }
+  }
+}

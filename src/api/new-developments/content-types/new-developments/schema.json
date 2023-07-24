@@ -1,0 +1,215 @@
+{
+  "kind": "collectionType",
+  "collectionName": "new_developments",
+  "info": {
+    "singularName": "new-developments",
+    "pluralName": "new-development",
+    "displayName": "New Developments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "crm_id": {
+      "configurable": false,
+      "type": "string"
+    },
+    "crm_provider": {
+      "configurable": false,
+      "type": "string"
+    },
+    "search_type": {
+      "configurable": false,
+      "type": "string",
+      "enum": [
+        "sales"
+      ],
+      "default": "sales"
+    },
+    "building": {
+      "configurable": false,
+      "type": "json"
+    },
+    "display_address": {
+      "configurable": false,
+      "type": "string"
+    },
+    "status": {
+      "configurable": false,
+      "type": "string"
+    },
+    "bedroom": {
+      "configurable": false,
+      "type": "integer"
+    },
+    "area": {
+      "configurable": false,
+      "type": "string"
+    },
+    "area_id": {
+      "configurable": false,
+      "type": "string"
+    },
+    "post_code": {
+      "configurable": false,
+      "type": "string"
+    },
+    "latitude": {
+      "configurable": false,
+      "type": "float"
+    },
+    "longitude": {
+      "configurable": false,
+      "type": "float"
+    },
+    "price": {
+      "configurable": false,
+      "type": "decimal"
+    },
+    "max_price": {
+      "configurable": false,
+      "type": "decimal"
+    },
+    "price_qualifier": {
+      "configurable": false,
+      "type": "string"
+    },
+    "developer": {
+      "configurable": false,
+      "type": "string"
+    },
+    "developer_logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "configurable": false
+    },
+    "development_type": {
+      "configurable": false,
+      "type": "string"
+    },
+    "project": {
+      "configurable": false,
+      "type": "string"
+    },
+    "featured_new_developments": {
+      "configurable": false,
+      "type": "boolean",
+      "default": false
+    },
+    "expected_completion_date": {
+      "configurable": false,
+      "type": "date"
+    },
+    "search_description": {
+      "configurable": false,
+      "type": "text"
+    },
+    "description": {
+      "configurable": false,
+      "type": "richtext"
+    },
+    "additional_description": {
+      "configurable": false,
+      "type": "richtext"
+    },
+    "publish": {
+      "configurable": false,
+      "type": "boolean",
+      "default": false
+    },
+    "title": {
+      "configurable": false,
+      "type": "string"
+    },
+    "slug": {
+      "configurable": false,
+      "type": "string"
+    },
+    "extra": {
+      "configurable": false,
+      "type": "json"
+    },
+    "images": {
+      "configurable": false,
+      "type": "json"
+    },
+    "floorplan": {
+      "configurable": false,
+      "type": "json"
+    },
+    "epc": {
+      "configurable": false,
+      "type": "json"
+    },
+    "brochure": {
+      "configurable": false,
+      "type": "json"
+    },
+    "address": {
+      "configurable": false,
+      "type": "json",
+      "readonly": true
+    },
+    "crm_negotiator_id": {
+      "configurable": false,
+      "type": "json"
+    },
+    "crm_negotiator_email": {
+      "configurable": false,
+      "type": "string"
+    },
+    "office_crm_id": {
+      "configurable": false,
+      "type": "string"
+    },
+    "situation": {
+      "configurable": false,
+      "type": "json"
+    },
+    "style": {
+      "configurable": false,
+      "type": "json"
+    },
+    "parking": {
+      "configurable": false,
+      "type": "json"
+    },
+    "special": {
+      "configurable": false,
+      "type": "json"
+    },
+    "age": {
+      "configurable": false,
+      "type": "json"
+    },
+    "locality": {
+      "configurable": false,
+      "type": "json"
+    },
+    "furnishing": {
+      "configurable": false,
+      "type": "json"
+    },
+    "crm_type": {
+      "configurable": false,
+      "type": "json"
+    },
+    "imagetransforms": {
+      "configurable": false,
+      "type": "json",
+      "readonly": true
+    },
+    "rank": {
+      "configurable": false,
+      "type": "integer"
+    },
+    "department": {
+      "type": "string"
+    }
+  }
+}

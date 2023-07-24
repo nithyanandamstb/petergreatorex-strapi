@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_components_add_videos",
+  "info": {
+    "displayName": "add_video",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "configurable": false,
+      "multiple": false,
+      "required": true
+    },
+    "video_link": {
+     "configurable": false, 
+     "type": "string"
+    }
+  }
+}

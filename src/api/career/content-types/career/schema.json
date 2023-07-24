@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "career"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "slug": {
+     "configurable": false, 
+     "type": "uid",
+      "targetField": "title"
+    },
+    "location": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "salary": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "category": {
+     "configurable": false, 
+     "type": "enumeration",
+      "enum": [
+        "sales",
+        "lettings",
+        "marketing",
+        "others"
+      ],
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "configurable": false,
+      "multiple": false,
+      "required": false
+    },
+    "video_link": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "publish": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "job_details": {
+     "configurable": false, 
+     "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "imagetransforms": {
+     "configurable": false, 
+     "type": "json"
+    },
+    "rank": {
+      "configurable": false, 
+      "type": "integer"
+     }
+  }
+}

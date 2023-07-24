@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_contact_details",
+  "info": {
+    "displayName": "contact_details",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+     "configurable": false, 
+     "type": "text"
+    },
+    "phone": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "email": {
+     "configurable": false, 
+     "type": "email"
+    },
+    "title": {
+     "configurable": false, 
+     "type": "string"
+    }
+  }
+}

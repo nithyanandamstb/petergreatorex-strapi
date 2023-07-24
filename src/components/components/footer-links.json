@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_footer_links",
+  "info": {
+    "displayName": "footer_links",
+    "icon": "qrcode"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "add_link": {
+      "displayName": "add_footer_links",
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.add-footer-links"
+    }
+  }
+}

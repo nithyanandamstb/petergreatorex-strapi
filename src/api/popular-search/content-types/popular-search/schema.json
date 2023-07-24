@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popular_searches",
+  "info": {
+    "singularName": "popular-search",
+    "pluralName": "popular-searches",
+    "displayName": "popular search",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "publish": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": true
+    },
+    "new_column": {
+      "displayName": "add_column",
+      "type": "component",
+      "repeatable": true,
+      "configurable": false,
+      "component": "components.add-column"
+    },
+    "pages": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "select_popular_search"
+    },
+    "rank": {
+      "configurable": false, 
+      "type": "integer"
+     }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {      
+      "configurable":false,
+      "type": "string",
+      "required": true
+    },
+    "slug": {      
+      "configurable":false,
+      "type": "uid",
+      "targetField": "title"
+    },
+    "category": {      
+      "configurable":false,
+      "type": "customField",
+      "options": [
+        "buying",
+        "selling",
+        "renting",
+        "landlords"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "date": {      
+      "configurable":false,
+      "type": "date"
+    },
+    "tile_image": {      
+      "configurable":false,
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "publish": {      
+      "configurable":false,
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "add_blog_content": {      
+      "configurable":false,
+      "type": "dynamiczone",
+      "components": [
+        "page-modules.plain-content",
+        "page-modules.accordion",
+        "page-modules.image"
+      ]
+    },
+    "banner_image": {      
+      "configurable":false,
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imagetransforms": {      
+      "configurable":false,
+      "type": "json"
+    },
+    "seo": {      
+      "configurable":false,
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "rank": {
+     "configurable": false,
+     "type": "integer"
+    },
+    "author": {      
+      "configurable":false,
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::team.team",
+      "inversedBy": "blogs"
+    }
+  }
+}

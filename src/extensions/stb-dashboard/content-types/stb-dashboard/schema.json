@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stb_dashboards",
+  "info": {
+    "singularName": "stb-dashboard",
+    "pluralName": "stb-dashboards",
+    "displayName": "Stb Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "comment": ""
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "label": "Name"
+    },
+    "Board_Type": {
+      "type": "enumeration",
+      "enum": [
+        "Chart",
+        "Card",
+        "Table"
+      ],
+      "required": true
+    },
+    "Enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "Options": {
+      "type": "json"
+    },
+    "Order_No": {
+      "type": "integer"
+    }
+  }
+}

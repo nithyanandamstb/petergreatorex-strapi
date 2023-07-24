@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_modules_video_reviews",
+  "info": {
+    "displayName": "video_review",
+    "icon": "chevron-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "add": {
+      "displayName": "add_video",
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.add-video"
+    }
+  }
+}

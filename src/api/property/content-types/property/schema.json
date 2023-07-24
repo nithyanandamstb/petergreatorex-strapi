@@ -1,0 +1,276 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "crm_id": {
+     "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "crm_provider": {
+     "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "search_type": {
+     "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "department": {
+     "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "title": {
+     "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "slug": {
+     "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "display_address": {
+     "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "address": {
+     "type": "json",
+      "required": true,
+      "configurable": false
+    },
+    "latitude": {
+     "type": "float",
+      "configurable": false
+    },
+    "longitude": {
+     "type": "float",
+      "configurable": false
+    },
+    "building": {
+     "type": "json",
+      "required": true,
+      "configurable": false
+    },
+    "bedroom": {
+     "type": "integer",
+      "configurable": false
+    },
+    "bathroom": {
+     "type": "integer",
+      "configurable": false
+    },
+    "kitchen": {
+     "type": "integer",
+      "configurable": false
+    },
+    "reception": {
+     "type": "integer",
+      "configurable": false
+    },
+    "status": {
+     "type": "string",
+      "configurable": false
+    },
+    "publish": {
+     "type": "boolean",
+      "required": true,
+      "default": false,
+      "configurable": false,
+      "index": true
+    },
+    "office_crm_id": {
+     "type": "string",
+      "configurable": false
+    },
+    "office_mapping": {
+     "type": "string",
+      "configurable": false
+    },
+    "room_details": {
+     "type": "json",
+      "configurable": false
+    },
+    "accommodation_summary": {
+     "type": "json",
+      "configurable": false
+    },
+    "introtext": {
+     "type": "richtext",
+      "configurable": false
+    },
+    "description": {
+     "type": "richtext",
+      "configurable": false
+    },
+    "long_description": {
+     "type": "richtext",
+      "configurable": false
+    },
+    "virtual_tour": {
+     "type": "json",
+      "configurable": false
+    },
+    "images": {
+     "type": "json",
+      "configurable": false
+    },
+    "floorplan": {
+     "type": "json",
+      "configurable": false
+    },
+    "epc": {
+     "type": "json",
+      "configurable": false
+    },
+    "brochure": {
+     "type": "json",
+      "configurable": false
+    },
+    "currency": {
+     "type": "string",
+      "configurable": false
+    },
+    "price": {
+     "type": "float",
+      "configurable": false
+    },
+    "max_price": {
+     "type": "float",
+      "configurable": false
+    },
+    "price_qualifier": {
+     "type": "string",
+      "configurable": false
+    },
+    "rent": {
+     "type": "float",
+      "configurable": false
+    },
+    "crm_area_id": {
+     "type": "json",
+      "configurable": false
+    },
+    "crm_negotiator_id": {
+     "type": "json",
+      "configurable": false
+    },
+    "area": {
+     "type": "string",
+      "configurable": false
+    },
+    "negotiator_mapping": {
+     "type": "string",
+      "configurable": false
+    },
+    "situation": {
+     "type": "json",
+      "configurable": false
+    },
+    "style": {
+     "type": "json",
+      "configurable": false
+    },
+    "parking": {
+     "type": "json",
+      "configurable": false
+    },
+    "special": {
+     "type": "json",
+      "configurable": false
+    },
+    "floorarea_min": {
+     "type": "decimal",
+      "configurable": false
+    },
+    "floorarea_max": {
+     "type": "decimal",
+      "configurable": false
+    },
+    "floorarea_type": {
+     "type": "string",
+      "configurable": false
+    },
+    "archive_after": {
+     "type": "date",
+      "configurable": false
+    },
+    "available_from": {
+     "type": "datetime",
+      "configurable": false
+    },
+    "extra": {
+     "type": "json",
+      "configurable": false
+    },
+    "imagetransforms": {
+     "type": "json",
+      "configurable": false
+    },
+    "property_url": {
+     "type": "string",
+      "configurable": false
+    },
+    "thumbnail": {
+     "type": "string",
+      "configurable": false
+    },
+    "video_tour": {
+     "type": "json",
+      "configurable": false
+    },
+    "selling_info": {
+     "type": "json",
+      "configurable": false
+    },
+    "letting_info": {
+     "type": "json",
+      "configurable": false
+    },
+    "floor_area": {
+     "type": "float",
+      "configurable": false
+    },
+    "negotiator_id": {
+     "type": "string",
+      "configurable": false
+    },
+    "area_id": {
+     "type": "string",
+      "configurable": false
+    },
+    "master_id": {
+     "type": "string",
+      "configurable": false
+    },
+    "council_tax": {
+     "type": "string",
+      "configurable": false
+    },
+    "map": {
+     "type": "json",
+      "configurable": false
+    },
+    "rank": {
+     "type": "integer",
+      "configurable": false
+    },
+    "algoliaData": {
+     "type": "json",
+     "configurable": false
+    }
+  }
+}

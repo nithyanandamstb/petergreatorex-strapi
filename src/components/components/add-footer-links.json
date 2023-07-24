@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_add_footer_links",
+  "info": {
+    "displayName": "add_footer_links",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    }
+  }
+}

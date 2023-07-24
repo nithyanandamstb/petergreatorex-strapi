@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_components_add_columns",
+  "info": {
+    "displayName": "add_column",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "add_new_link": {
+      "displayName": "add_popular_link",
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.add-popular-link"
+    }
+  }
+}

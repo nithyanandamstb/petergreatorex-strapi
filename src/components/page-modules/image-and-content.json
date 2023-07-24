@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_page_modules_image_and_contents",
+  "info": {
+    "displayName": "image_and_content",
+    "icon": "indent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+     "configurable": false, 
+     "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+     "configurable": false, 
+     "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "image_alignment": {
+     "configurable": false, 
+     "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "background_color_transparent": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "cta_title": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "cta_link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "subscribe_form": {
+     "configurable": false, 
+     "type": "boolean",
+      "default": false
+    }
+  }
+}

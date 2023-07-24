@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_components_banner_sections",
+  "info": {
+    "displayName": "banner_section",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+     "configurable": false, 
+     "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cta_1_title": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "cta_1_link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "cta_2_title": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "cta_2_link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "banner_content": {
+     "configurable": false, 
+     "type": "customField",
+      "options": {
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "banner_title": {
+     "configurable": false, 
+     "type": "string"
+    }
+  }
+}

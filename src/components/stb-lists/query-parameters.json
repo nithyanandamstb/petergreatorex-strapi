@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_components_query_parameters",
+  "info": {
+    "name": "Query Parameters",
+    "icon": "search",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Department": {
+     "configurable": false, 
+     "type": "enumeration",
+      "enum": [
+        "Residential",
+        "Commercial",
+        "Auction",
+        "New_development"
+      ],
+      "default": "Residential",
+      "required": true
+    },
+    "Property_Type": {
+     "configurable": false, 
+     "type": "enumeration",
+      "enum": [
+        "Sales",
+        "Lettings",
+        "Both"
+      ]
+    },
+    "Area": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "Postcode": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "Min_Price": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "Max_Price": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "Negotiator": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "Query_Object": {
+     "configurable": false, 
+     "type": "text"
+    }
+  }
+}

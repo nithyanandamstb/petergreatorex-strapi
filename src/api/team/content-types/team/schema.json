@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "designation": {
+      "configurable": false,
+      "type": "string"
+    },
+    "email": {
+      "configurable": false,
+      "type": "email"
+    },
+    "category": {
+      "configurable": false,
+      "type": "customField",
+      "options": [
+        "directors",
+        "negotiators",
+        "marketing"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "image": {
+      "configurable": false,
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imagetransforms": {
+      "configurable": false,
+      "type": "json"
+    },
+    "content": {
+      "configurable": false,
+      "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "publish": {
+      "configurable": false,
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "phone": {
+      "configurable": false,
+      "type": "string"
+    },
+    "blogs": {
+      "configurable": false,
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "author"
+    },
+    "property_team_mapping": {
+      "configurable": false,
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "configurable": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "configurable": false
+    },
+    "rank": {
+      "type": "integer",
+      "default": 0,
+      "configurable": false
+    },
+    "offices": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::office.office",
+      "mappedBy": "select_team"
+    }
+  }
+}

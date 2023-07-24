@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_accordions",
+  "info": {
+    "displayName": "accordion",
+    "icon": "arrow-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "add": {
+      "displayName": "add_new_accordion",
+      "configurable": false,
+      "type": "component",
+      "repeatable": true,
+      "component": "components.add-new-accordion"
+    }
+  }
+}

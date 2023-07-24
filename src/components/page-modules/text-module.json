@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_page_modules_text_modules",
+  "info": {
+    "displayName": "text_module",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "text"
+    },
+    "cta_title": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "cta_link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "layout": {
+     "configurable": false, 
+     "type": "enumeration",
+      "enum": [
+        "default",
+        "content_with_right_tiles"
+      ],
+      "default": "default",
+      "required": true
+    },
+    "short_description": {
+     "configurable": false, 
+     "type": "customField",
+      "options": {
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "Statistics": {
+      "displayName": "statistics",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.statistics",
+      "configurable": false
+      
+    },
+    "add_new": {
+      "displayName": "Add_links",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.add-links",
+      "configurable": false
+    },
+    "right_tiles_module_title": {
+     "configurable": false, 
+     "type": "string"
+    }
+  }
+}

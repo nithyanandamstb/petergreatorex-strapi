@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_statistics",
+  "info": {
+    "displayName": "statistics",
+    "icon": "bacon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stats_title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "stats_description": {
+     "configurable": false, 
+     "type": "text",
+      "required": true
+    }
+  }
+}

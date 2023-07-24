@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "configurable": false,
+      "type": "string",
+      "required": true
+    },
+    "Add_Page_Modules": {
+      "configurable": false,
+      "type": "dynamiczone",
+      "components": [
+        "page-modules.text-module",
+        "page-modules.global-module",
+        "page-modules.image-and-content",
+        "page-modules.plain-content",
+        "page-modules.valuation-module",
+        "page-modules.video-review"
+      ]
+    },
+    "choose_menu": {
+      "configurable": false,
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::menu.menu",
+      "mappedBy": "page"
+    },
+    "custom_css_classname": {
+      "configurable": false,
+      "type": "string"
+    },
+    "publish": {
+      "configurable": false,
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "seo": {
+      "configurable": false,
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "banner": {
+      "configurable": false,
+      "type": "component",
+      "repeatable": false,
+      "component": "components.banner-section"
+    },
+    "imagetransforms": {
+      "configurable": false,
+      "type": "json"
+    },
+    "select_popular_search": {
+      "configurable": false,
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::popular-search.popular-search",
+      "inversedBy": "pages"
+    },
+    "rank": {
+      "configurable": false,
+      "type": "integer"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "home_page",
+        "landing_page",
+        "static_page",
+        "news_landing_page",
+        "people_landing_page",
+        "careers_landing_page",
+        "valuation_landing_page",
+        "contact_page",
+        "reviews_page",
+        "form_page"
+      ],
+      "required": true
+    }
+  }
+}

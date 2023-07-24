@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_components_plain_contents",
+  "info": {
+    "displayName": "plain_content",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+     "configurable": false, 
+     "type": "customField",
+      "options": {
+        "preset": "standard"
+      },
+      "required": true,
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "cta_1_title": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "cta_1_link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "cta_2_title": {
+     "configurable": false, 
+     "type": "string"
+    },
+    "cta_2_link": {
+     "configurable": false, 
+     "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    },
+    "layout": {
+     "configurable": false, 
+     "type": "enumeration",
+      "enum": [
+        "default",
+        "center_align"
+      ],
+      "default": "default",
+      "required": false
+    },
+    "title": {
+     "configurable": false, 
+     "type": "string"
+    }
+  }
+}

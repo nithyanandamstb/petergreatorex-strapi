@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_components_add_search_links",
+  "info": {
+    "displayName": "add_search_links",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    },
+    "link": {
+     "configurable": false, 
+     "type": "string",
+      "required": true
+    }
+  }
+}
